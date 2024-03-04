@@ -1,1 +1,1 @@
-This Is Repository For Co Hokage Pankaj Diwan.
+Repository For Co Hokage Pankaj Diwan.
