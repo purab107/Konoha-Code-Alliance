@@ -6,11 +6,9 @@ char ch;
 
 int menu()
 {
-    cout<<"Enter shape"<<endl;
+    cout<<"Enter shape:"<<endl;
     cout<<"1.Rectangle"<<endl<<"2.Circle"<<endl<<"3.Square"<<endl<<"4.Cube"<<endl<<"5.Cuboid"<<endl<<"6.Sphere"<<endl<<"7.Cylinder"<<endl;
     cin>>shape;
-
-    return shape;
 }
 
 int main()
@@ -33,21 +31,21 @@ int main()
             break;
 
         case 2:
-            cout<<"Enter radius";
+            cout<<"Enter radius:";
             cin>>a;
 
             cout<<"Area of circle is "<<3.14*a*a<<endl;
             break;
 
             case 3:
-            cout<<"Enter length of side";
+            cout<<"Enter length of side:";
             cin>>a;
 
             cout<<"Area of square is "<<a*a<<endl;
             break;
 
         case 4:
-            cout<<"Enter length of side";
+            cout<<"Enter length of side:";
             cin>>a;
 
             cout<<"Area of cube is "<<6*a*a<<endl;
