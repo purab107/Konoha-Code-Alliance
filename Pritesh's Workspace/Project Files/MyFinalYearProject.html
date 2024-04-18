@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Center the input message and image vertically */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Add margin below the input message */
+        h2 {
+            margin-bottom: 20px;
+        }
+ 
+        /* Define the animation keyframes */
+        @keyframes revealAnimation {
+            0% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+            }
+            15% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 15%, 0% 15%);
+            }
+            30% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 30%);
+            }
+            45% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 45%);
+            }
+            60% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+            }
+            75% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 75%);
+            }
+            100% {
+                clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+            }
+        }
+
+        /* Define the loader animation */
+        @keyframes loaderAnimation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+ 
+        /* Apply the animation to the image */
+        img.reveal {
+            width: 500px; /* Set your desired image width */
+            height: auto; /* Maintain aspect ratio */
+            clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%); /* Initially hide the image */
+            animation: revealAnimation 5s linear forwards; /* Animation stops at the end position */
+            display: none; /* Initially hidden */
+            margin-top: 20px; /* Add space above the image */
+        }
+
+        /* Loader styles */
+        .loader {
+            border: 16px solid #f3f3f3; /* Light grey */
+            border-top: 16px solid #4CAF50; /* Green */
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            animation: loaderAnimation 1s linear infinite;
+            margin-bottom: 20px; /* Add space below the loader */
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter two numbers</h2>
+    <form id="input-form">
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" name="num1" required><br><br>
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" name="num2" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Loader -->
+    <div class="loader"></div>
+
+    <script>
+        document.getElementById('input-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Display loader
+            document.querySelector('.loader').style.display = 'block';
+
+            // Hide image animation
+            document.querySelector('img.reveal').style.display = 'none';
+
+            // Hide loader after 3 seconds
+            setTimeout(function() {
+                document.querySelector('.loader').style.display = 'none';
+                // Display image animation
+                document.querySelector('img.reveal').style.display = 'block';
+            }, 3000); // 3 seconds
+        });
+    </script>
+
+    <!-- Image -->
+    <img src="https://github.com/purab107/Konoha-Code-Alliance/blob/main/Pritesh's%20Workspace/20240412_181828.jpg?raw=true" alt="Reveal animation" class="reveal">
+</body>
+</html>
