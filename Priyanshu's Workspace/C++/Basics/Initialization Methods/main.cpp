@@ -18,10 +18,10 @@ int main()
     int var10 (2.9); // Information lost (initializes to 2). less safe than braced initialization.
 
     //Assignment Initialization.
-    int var11 = 2;
-    int var12 = 7;
-    int var13 =  var11 + var12;
-    int var14 = 2.9;
+    int var11 = 2; // Initializes to 2.
+    int var12 = 7; // Initializes to 7.
+    int var13 =  var11 + var12; // Can use an expression as initializer.
+    int var14 = 2.9; // Information lost (initializes to 2). less safe than braced initialization.
 
     std::cout << "Garbage Value Initializarion: " <<std::endl;
     std::cout << "int var1; => " << var1 <<std::endl;
