@@ -1,4 +1,4 @@
-Konoha Code Alliance GitHub Repository 🍃
+# Konoha Code Alliance GitHub Repository 🍃
 
 Welcome, esteemed members of the Konoha Code Alliance, to our sacred digital repository where coding prowess meets ninja camaraderie! 🌟
 
