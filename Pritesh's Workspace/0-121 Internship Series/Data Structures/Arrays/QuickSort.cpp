@@ -18,14 +18,15 @@ void swap(int* a, int* b){
 int partition(int arr[], int low, int high){
 
     int pivot = arr[low];
-    int i = low + 1;
     int j = high;
-    while(j>i){
-        if(arr[i])
+    for (int i = high; i > low; i--) {
+        if (arr[i] > pivot){
+            swap(arr[i],arr[j]);
+            j--;
+        }
     }
-
-    
-
+    swap(arr[j],arr[low]);
+    return j;
 }
 
 void quickSortAlgo(int arr[], int low, int high){
