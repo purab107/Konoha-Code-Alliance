@@ -1,0 +1,39 @@
+*{
+    color: white;
+}
+header{
+    background-color: #0f1111;
+    height: 60px;
+}
+
+button {
+    background-color: #f08804;
+    color: white;
+}
+
+input{
+    color: black;
+}
+
+#logo{
+    color: #f08804;
+    font-size: 25px;
+
+
+}
+
+a{
+    margin-right: 200px;
+}
+
+.content{
+    height: 220px;
+    width: 1424px;
+    text-align: center;
+    
+}
+
+footer{
+    background-color: #0f1111;
+    text-align: center;
+}

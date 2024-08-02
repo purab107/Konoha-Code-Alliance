@@ -1,0 +1,53 @@
+h1 {
+    color : red;
+    text-align: center;
+    text-decoration: underline;
+}
+/* body{
+    background-color: rgb(78, 34, 34);
+} */
+
+header{
+    background-color: grey;
+}
+
+#101{
+    color : blue;
+    text-decoration: overline;
+}
+
+p{
+    text-align: center;
+    text-decoration: blue line-through;
+    font-weight: bold;
+    font-family: arial;   
+    line-height: 3;                                                           
+}
+
+div{
+    margin-right: 100px;
+}
+
+#box1{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: red;
+}
+
+#box2{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: red;
+}
+
+#box3{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: red;
+}
