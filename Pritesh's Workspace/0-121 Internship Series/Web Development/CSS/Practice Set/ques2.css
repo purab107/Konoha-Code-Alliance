@@ -1,0 +1,20 @@
+#heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#outer{
+    font-size: 25px;
+}
+
+#inner{
+    font-size: 10px;
+    border-style: solid;
+    border-color: red;
+    background-color: rgb(255, 194, 194);
+    text-align: center;
+}

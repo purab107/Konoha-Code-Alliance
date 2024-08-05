@@ -1,0 +1,32 @@
+#main{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+*{
+    color: white;
+}
+#amazon{
+    background-color: #0f1111;
+    height: 60px;
+}
+
+
+
+button {
+    background-color: #f08804;
+    color: white;
+}
+
+#logo{
+    color: #f08804;
+    font-size: 25px;
+
+
+}
+
+a{
+    margin-right: 200px;
+}

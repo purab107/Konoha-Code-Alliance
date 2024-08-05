@@ -1,0 +1,120 @@
+/* h1 {
+    color : red;
+    text-align: center;
+    text-decoration: underline;
+} */
+/* body{
+    background-color: rgb(78, 34, 34);
+} */
+
+/* header{
+    background-color: grey;
+}
+
+#101{
+    color : blue;
+    text-decoration: overline;
+}
+
+p{
+    text-align: center;
+    text-decoration: blue line-through;
+    font-weight: bold;
+    font-family: arial;   
+    line-height: 3;                                                           
+}
+
+div{
+    margin-right: 100px;
+}
+
+#box1{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: red;
+}
+
+#box2{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: red;
+}
+
+#box3{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: red;
+} */
+
+ 
+/* #box1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+#box2{
+    height: 50px;
+    width: 30%;
+    background-color: yellow;
+} */
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    background-color: aqua;
+    display: inline-block;
+    left: 500px;
+}
+
+/* #box1{
+    position: static;
+}
+
+#box2{
+    position: relative;
+    top: 100px;
+}
+
+#box3{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+
+#box4{
+    position: fixed;
+    right: 10px;
+} */
+
+body{
+    background-image: url("ryangoslink.jfif");
+    background-size: auto;
+}
+#box1{
+    position: sticky;
+    top: 10px;
+}
+
+#box2{
+    position: sticky;
+    top: 120px;
+    z-index: -1;
+}
+
+#box3{
+    position: sticky;
+    top: 230px;
+}
+
+#box4{
+    position: sticky;
+    top: 340px;
+}
