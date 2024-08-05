@@ -1,10 +1,10 @@
 # Python program to calculate age 
 import datetime
 
-name=input("Enter your name: ")
-print("Hey,",name,"\n")
+name=input("Enter your name: ").capitalize
+print(f"Hey, {name} \n")
 
-Current_Year= datetime.datetime.today()
+Current_Year = datetime.datetime.today()
 
 while True:
     try:
@@ -12,7 +12,7 @@ while True:
 
         if birth_year <= Current_Year.year:
             age = Current_Year.year-birth_year
-            print(name,",You are",age,"years old")
+            print(f"{name}, You are {age} years old")
             break
         else:
             print("NOT POSSIBLE")
